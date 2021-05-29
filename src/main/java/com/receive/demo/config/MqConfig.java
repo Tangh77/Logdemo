@@ -17,8 +17,6 @@ public class MqConfig {
     @Autowired
     private ReceiveMapper receiveMapper;
 
-    @Autowired
-    private RabbitTemplate rabbitTemplate;
 
     @RabbitListener(queues = "regQueue")
     @RabbitHandler
